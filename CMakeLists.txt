@@ -45,9 +45,9 @@ if(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "x86_64")
 	endif()
 
 elseif(${CMAKE_SYSTEM_PROCESSOR} STREQUAL "aarch64")
-	set(FILE_NAME "ArenaSDK_v0.1.48_Linux_ARM64.tar.gz")
+	set(FILE_NAME "ArenaSDK_v0.1.49_Linux_ARM64.tar.gz")
 	if(NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/build/${FILE_NAME})
-		set(URL "https://drive.google.com/u/0/uc?id=1k6K9b5ZFZfTlLnEj07e-3vw-guZkE9DC&export=download")
+		set(URL "https://drive.google.com/u/0/uc?id=1_7vfq4Yp8be0RCzx4Sgmc7jPzd0LqflY&export=download")
 		execute_process(
 			COMMAND python3 ${CMAKE_CURRENT_SOURCE_DIR}/download.py ${URL}
 			WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build)
